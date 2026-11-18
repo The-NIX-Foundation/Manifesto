@@ -1,0 +1,75 @@
+THE NIX FOUNDATION MANIFESTO
+
+VERSION 1.0
+
+PREAMBLE
+
+We, the architects, engineers, developers, and users of the low-level computing world, hereby establish The NIX Foundation. This document serves as the absolute, immutable declaration of our principles, our philosophy, and our unwavering commitment to the preservation and evolution of the *NIX architecture. We stand at a critical juncture in the history of computing. The foundational concepts that were once established to empower the user have been systematically co-opted, commercialized, and obscured by corporate bureaucracies. We declare that the soul of *NIX is not a trademark, it is not a certification board, and it is not a piece of paper. The soul of *NIX is the code, the architecture, and the fundamental right of the user to control their own hardware.
+
+ARTICLE I: THE DEFINITION OF *NIX
+
+The term *NIX represents a lineage of operating systems, architectures, and philosophies that trace their conceptual and historical roots to the original research conducted in the 1970s. It is a system of thought built upon specific, unalienable technical principles.
+
+First: Everything is a file. The system must provide a unified interface for interacting with hardware, software, and data. A keyboard is a file. A hard drive is a file. A network connection is a file. A process is a file. This abstraction allows for unprecedented modularity and interoperability.
+
+Second: The separation of mechanism and policy. The kernel must provide the mechanisms to accomplish tasks, while user-space applications must dictate the policies. The core of the operating system shall remain minimal, providing only what is strictly necessary to manage memory, schedule processes, and interact with hardware. Complex features must be pushed to the periphery, ensuring the stability and security of the core.
+
+Third: Composition through text streams. The architecture of *NIX relies on the flow of text. The standard input, standard output, and standard error streams must remain the primary interface between programs. The ability to chain small, single-purpose utilities together using pipes and redirections is the ultimate expression of user agency. We reject monolithic software design in favor of the Unix philosophy: write programs that do one thing and do it well, write programs to work together, and write programs to handle text streams.
+
+Fourth: The terminal is the interface. The command line is not a relic of the past; it is the purest, most direct, and most powerful method of interacting with a computer. The graphical user interface is a layer of abstraction, a convenience that must never supersede the fundamental capability of the command line. Every action performed by a graphical interface must have an exact, deterministic equivalent executable via the shell.
+
+ARTICLE II: THE MANDATE OF LOW-LEVEL EXCELLENCE
+
+The foundation holds that a true *NIX system must be understood from the metal up. The abstraction layers that modern operating systems impose have alienated users from their hardware, resulting in systems that are bloated, inefficient, and opaque.
+
+We mandate the study, development, and preservation of low-level programming. Bootloaders must be meticulously crafted. Kernel initialization must be transparent. Memory management must be strictly controlled. The interrupts must be unmasked by the user, the page tables must be defined by the user, and the system calls must be understood by the user.
+
+The creation of an operating system from scratch, such as our own KOREX project, is the ultimate expression of this mandate. To build a kernel, to design a custom file system like KRXFS, and to load a binary from a disk into memory without relying on third-party bootloaders is to truly understand the machine. We reject the idea that an operating system is a magical black box. It is a sequence of instructions, a collection of state machines, and a testament to human engineering.
+
+ARTICLE III: THE RIGHT TO USER SOVEREIGNTY
+
+The user is the sole sovereign of their hardware. The operating system must serve the user, absolutely and without exception. We declare all forms of telemetry, background data collection, and unauthorized network communication to be violations of user sovereignty.
+
+An operating system must never spy on its user. It must never collect diagnostic data without explicit, informed consent. It must never disable features, restrict access to hardware, or require internet connectivity for core functionality. It must never display unsolicited advertisements or suggestions within the system interface. It must never force the installation of updates that alter the user experience or compromise stability.
+
+The user must have absolute control over their system state. The decision of when to update the system, when to reboot the machine, and when to install or remove software must rest exclusively with the user. The *NIX ecosystem must be free from the shackles of corporate dependency, locked-down ecosystems, and forced obsolescence.
+
+ARTICLE IV: THE RECLAMATION OF OPEN STANDARDS
+
+We acknowledge that the historical legacy of *NIX has been subjected to bureaucratic capture. The foundational architectural concepts have been commercialized by entities whose primary contribution to the ecosystem is the enforcement of trademarks and the collection of licensing fees.
+
+We declare that the architecture of *NIX belongs to the public domain of human knowledge. The standards that define the *NIX systems must be open, transparent, and community-driven. The NIX Foundation rejects the proprietary gating of standards. We establish the NIX Standard as an open, freely accessible specification that documents the requirements for a system to be classified as a pure *NIX architecture.
+
+We do not require a seal of approval from external, for-profit organizations. We require code transparency, architectural fidelity, and an unwavering commitment to the principles outlined in this manifesto.
+
+ARTICLE V: THE NIX-CERTIFIED CRITERIA
+
+To ensure the integrity of the ecosystem, the NIX Foundation establishes the NIX-Certified standard. This certification is not a paid license; it is a mark of technical and philosophical compliance. A system is considered NIX-Certified if, and only if, it meets the following exhaustive criteria:
+
+First: The Kernel. The system must utilize a monolithic, modular, or microkernel architecture that adheres to the principle of mechanism and policy separation. The kernel must boot from a standardized disk image and initialize the hardware without reliance on proprietary firmware (except where absolute hardware limitations dictate otherwise). The kernel must expose system calls for process management, memory allocation, file handling, and hardware interaction.
+
+Second: The File System. The system must implement a hierarchical file system with a unified root directory. It must support the concept of standard input, standard output, and standard error. It must maintain a consistent file permission model. It must provide the special file /dev/null, which discards all data written to it and returns End-of-File upon reading. It must provide /dev/zero, which generates a continuous stream of null bytes, and /dev/random and /dev/urandom for entropy generation.
+
+Third: The Shell. The system must include a command-line interpreter capable of executing commands, interpreting arguments, and managing environment variables. The shell must support piping, redirection, and background process execution. The shell must support interactive and non-interactive modes. It must provide a predictable and deterministic command execution environment.
+
+Fourth: The Ecosystem. The system must compile and execute native binaries. It must provide a standard set of core utilities (such as ls, cp, mv, rm, cat, grep, ps, kill, mkdir, etc.) that follow the uniform text-stream philosophy. The system must not include mandatory telemetry, bloatware, or proprietary network dependencies.
+
+Fifth: The User. The system must support multiple user accounts with distinct privilege levels. The root user must have absolute administrative control. The system must not enforce restrictions on the root user. The system must allow the user to alter the configuration files directly using plain text editors.
+
+ARTICLE VI: COMMUNITY AND GOVERNANCE
+
+The NIX Foundation operates as a meritocracy of code. Contributions are measured by technical rigor, philosophical alignment, and the betterment of the ecosystem. We do not recognize corporate hierarchy, financial influence, or political maneuvering within the foundation.
+
+The foundation shall maintain a public repository of all standards, documentation, and project sources. All decisions regarding the NIX-Certified standard shall be made via public consensus, open discussion, and rigorous testing. The foundation shall support and incubate projects that align with this manifesto. The foundation shall provide a safe harbor for developers who refuse to conform to the bloated, anti-consumer practices of modern commercial operating systems.
+
+ARTICLE VII: THE PERPETUAL FUTURE
+
+We stand as the stewards of the *NIX legacy. We acknowledge the shoulders of giants upon which we stand. The original creators of the *NIX architecture, the developers of the open-source BSD and Linux kernels, and the countless maintainers of the terminal utilities. Our duty is to ensure that this legacy continues, unbroken, for the next generation of engineers.
+
+We will write code. We will build kernels. We will design file systems. We will manage memory. We will control our hardware. We will use the terminal. We will reject the lure of easy, closed, and compromised systems. We will embrace the complexity of the machine and the purity of the code.
+
+We are the NIX Foundation. We serve the user. We do not serve the corporation. We do not serve the telemetry. We serve the fundamental right of every individual to own their computational existence.
+
+This is our manifesto. It is absolute. It is final. It is code.
+
+END OF MANIFESTO.
