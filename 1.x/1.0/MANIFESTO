@@ -24,7 +24,7 @@ The foundation holds that a true *NIX system must be understood from the metal u
 
 We mandate the study, development, and preservation of low-level programming. Bootloaders must be meticulously crafted. Kernel initialization must be transparent. Memory management must be strictly controlled. The interrupts must be unmasked by the user, the page tables must be defined by the user, and the system calls must be understood by the user.
 
-The creation of an operating system from scratch, such as our own KOREX project, is the ultimate expression of this mandate. To build a kernel, to design a custom file system like KRXFS, and to load a binary from a disk into memory without relying on third-party bootloaders is to truly understand the machine. We reject the idea that an operating system is a magical black box. It is a sequence of instructions, a collection of state machines, and a testament to human engineering.
+The creation of an operating system from scratch is the ultimate expression of this mandate. To build a kernel, to design a custom file system like KRXFS, and to load a binary from a disk into memory without relying on third-party bootloaders is to truly understand the machine. We reject the idea that an operating system is a magical black box. It is a sequence of instructions, a collection of state machines, and a testament to human engineering.
 
 ARTICLE III: THE RIGHT TO USER SOVEREIGNTY
 
@@ -42,9 +42,9 @@ We declare that the architecture of *NIX belongs to the public domain of human k
 
 We do not require a seal of approval from external, for-profit organizations. We require code transparency, architectural fidelity, and an unwavering commitment to the principles outlined in this manifesto.
 
-ARTICLE V: THE NIX-CERTIFIED CRITERIA
+ARTICLE V: THE NIX CERTIFIED CRITERIA
 
-To ensure the integrity of the ecosystem, the NIX Foundation establishes the NIX-Certified standard. This certification is not a paid license; it is a mark of technical and philosophical compliance. A system is considered NIX-Certified if, and only if, it meets the following exhaustive criteria:
+To ensure the integrity of the ecosystem, the NIX Foundation establishes the NIX Certified standard. This certification is not a paid license; it is a mark of technical and philosophical compliance. A system is considered NIX Certified if, and only if, it meets the following exhaustive criteria:
 
 First: The Kernel. The system must utilize a monolithic, modular, or microkernel architecture that adheres to the principle of mechanism and policy separation. The kernel must boot from a standardized disk image and initialize the hardware without reliance on proprietary firmware (except where absolute hardware limitations dictate otherwise). The kernel must expose system calls for process management, memory allocation, file handling, and hardware interaction.
 
@@ -60,7 +60,7 @@ ARTICLE VI: COMMUNITY AND GOVERNANCE
 
 The NIX Foundation operates as a meritocracy of code. Contributions are measured by technical rigor, philosophical alignment, and the betterment of the ecosystem. We do not recognize corporate hierarchy, financial influence, or political maneuvering within the foundation.
 
-The foundation shall maintain a public repository of all standards, documentation, and project sources. All decisions regarding the NIX-Certified standard shall be made via public consensus, open discussion, and rigorous testing. The foundation shall support and incubate projects that align with this manifesto. The foundation shall provide a safe harbor for developers who refuse to conform to the bloated, anti-consumer practices of modern commercial operating systems.
+The foundation shall maintain a public repository of all standards, documentation, and project sources. All decisions regarding the NIX Certified standard shall be made via public consensus, open discussion, and rigorous testing. The foundation shall support and incubate projects that align with this manifesto. The foundation shall provide a safe harbor for developers who refuse to conform to the bloated, anti-consumer practices of modern commercial operating systems.
 
 ARTICLE VII: THE PERPETUAL FUTURE
 
