@@ -24,7 +24,7 @@ The foundation holds that a true *NIX system must be understood from the metal u
 
 We mandate the study, development, and preservation of low-level programming. Bootloaders must be meticulously crafted. Kernel initialization must be transparent. Memory management must be strictly controlled. The interrupts must be unmasked by the user, the page tables must be defined by the user, and the system calls must be understood by the user.
 
-The creation of an operating system from scratch is the ultimate expression of this mandate. To build a kernel, to design a custom file system like KRXFS, and to load a binary from a disk into memory without relying on third-party bootloaders is to truly understand the machine. We reject the idea that an operating system is a magical black box. It is a sequence of instructions, a collection of state machines, and a testament to human engineering.
+The creation of an operating system from scratch is the ultimate expression of this mandate. To build a kernel, to design a custom file system, and to load a binary from a disk into memory without relying on third-party bootloaders is to truly understand the machine. We reject the idea that an operating system is a magical black box. It is a sequence of instructions, a collection of state machines, and a testament to human engineering.
 
 ARTICLE III: THE RIGHT TO USER SOVEREIGNTY
 
